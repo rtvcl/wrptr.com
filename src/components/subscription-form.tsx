@@ -30,8 +30,8 @@ const SubscriptionForm = (props: Props) => {
     <div className="relative max-w-2xl p-4 mx-2 shadow-md sm:p-6 sm:mx-auto">
       <h4 className="text-lg font-semibold ">
         don&apos;t miss out.
-        <span className="text-xs opacity-50">
-          (This is not functioning properly at the moment.)
+        <span className="ml-2 text-xs opacity-50">
+          (honestly, no idea when the newsletter will arrive, hehe!)
         </span>
       </h4>
       <p className="text-sm">Sign up for my newsletter to stay in the loop.</p>
