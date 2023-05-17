@@ -6,8 +6,9 @@ import {
   TiSocialTwitter,
   TiSocialLinkedin,
   TiSocialGithub,
-  TiSocialInstagram
+  TiSocialInstagram,
 } from "react-icons/ti";
+import { RoadmapList } from "./roadmap/page";
 
 export default function Home() {
   return (
@@ -27,7 +28,10 @@ export default function Home() {
             Product Manager with a love for problem-solving and uncovering
             insights through data analysis.
           </p>
-          <Link  href="/about-me" className="absolute -right-4 -bottom-4 px-6 whitespace-nowrap py-2 text-lg  font-extrabold bg-[#2CE0AC] retro-shadow hover:bg-[#A57EE5] transition-colors ">
+          <Link
+            href="/about-me"
+            className="absolute -right-4 -bottom-4 px-6 whitespace-nowrap py-2 text-lg  font-extrabold bg-[#2CE0AC] retro-shadow hover:bg-[#A57EE5] transition-colors "
+          >
             get in touch!
           </Link>
         </div>
@@ -48,7 +52,7 @@ export default function Home() {
         </ul>
       </div>
       <div></div>
-      <SubscriptionForm/>
+      <SubscriptionForm />
       <section className="max-w-xl mx-4 mt-4 sm:mx-auto">
         <h3 className="mb-4 text-2xl font-black ">/blog-post</h3>
         <ul className="space-y-6">
@@ -97,32 +101,34 @@ export default function Home() {
         </ul>
       </section>
       <div className="max-w-2xl p-4 mt-6 text-white bg-black rounded-t-[28px] md:mx-auto">
-      <section className="max-w-xl mx-auto ">
-        <h3 className="mb-4 text-2xl font-black ">/moodboard</h3>
-        <div className="space-y-4">
-          <p>
-            This is my moodboard, a collection of images, colors, and textures
-            that represent the aesthetic I hope to achieve with my website.
-          </p>
+        <section className="max-w-xl mx-auto ">
+          <h3 className="mb-4 text-2xl font-black ">/moodboard</h3>
+          <div className="space-y-4">
+            <p>
+              This is my moodboard, a collection of images, colors, and textures
+              that represent the aesthetic I hope to achieve with my website.
+            </p>
 
-          <Image
-          className="mx-auto"
-            src="/moodboard.png"
-            alt="moodboard"
-            width={720}
-            height={360}
-          />
-          <p>
-            As a product manager with a strong interest in tech and engineering,
-            I know that a website is more than just a digital presence –
-            it&apos;s an extension of my personal brand. That&apos;s why
-            I&apos;m working on this moodboard as my initial intention for my
-            website styles.{" "}
-          </p>
-        </div>
-      </section>
-      <p className="mt-4 text-center">* * *</p>
-      <footer className="text-sm text-center ">designed and developed with 💗 by Wira in 2023</footer>        
+            <Image
+              className="mx-auto"
+              src="/moodboard.png"
+              alt="moodboard"
+              width={720}
+              height={360}
+            />
+            <p>
+              As a product manager with a strong interest in tech and
+              engineering, I know that a website is more than just a digital
+              presence – it&apos;s an extension of my personal brand.
+              That&apos;s why I&apos;m working on this moodboard as my initial
+              intention for my website styles.{" "}
+            </p>
+          </div>
+        </section>
+        <p className="mt-4 text-center">* * *</p>
+        <footer className="text-sm text-center ">
+          designed and developed with 💗 by Wira in 2023
+        </footer>
       </div>
     </>
   );

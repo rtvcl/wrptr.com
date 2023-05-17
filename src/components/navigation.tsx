@@ -32,15 +32,7 @@ const navigationList: TNavigationItem[] = [
   {
     href: "/roadmap",
     label: "roadmap",
-  },
-  {
-    href: "/resource",
-    label: "resource",
-  },
-  {
-    href: "/uses",
-    label: "uses",
-  },
+  }
 ];
 
 function Navigation({}: Props) {
