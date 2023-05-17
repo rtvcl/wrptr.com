@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
     if (response.status >= 400) {
       return NextResponse.json(
         {
-          error: `There was an error subscribing to the newsletter. Shoot me an email at ogbonnakell@gmail and I'll add you to the list.`,
+          error: `There was an error subscribing to the newsletter.`,
         },
         { status: 400 }
       );

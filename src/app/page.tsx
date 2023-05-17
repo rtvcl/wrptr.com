@@ -1,4 +1,5 @@
 import Navigation from "@/components/navigation";
+import SubscriptionForm from "@/components/subscription-form";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -47,22 +48,7 @@ export default function Home() {
         </ul>
       </div>
       <div></div>
-      <div className="relative max-w-2xl p-4 mx-2 shadow-md sm:p-6 sm:mx-auto">
-        <h4 className="text-lg font-semibold ">don&apos;t miss out. <span className="text-xs opacity-50">(This is not functioning properly at the moment.)</span> </h4>
-        <p className="text-sm">
-          Sign up for my newsletter to stay in the loop.
-        </p>
-        <form className="flex items-center w-full gap-2 mt-4">
-          <input
-            className="border-2 flex-1 border-box bg-[#f1f1f1] border-[#000000] px-4 py-2 text-sm"
-            type="text"
-            placeholder="email.address@domain.xyz"
-          />
-          <button className="px-4 text-base font-bold border-[#000000] border-[1px] retro-shadow-sm hover:text-white hover:bg-black transition-colors">
-            subscribe
-          </button>
-        </form>
-      </div>
+      <SubscriptionForm/>
       <section className="max-w-xl mx-4 mt-4 sm:mx-auto">
         <h3 className="mb-4 text-2xl font-black ">/blog-post</h3>
         <ul className="space-y-6">
