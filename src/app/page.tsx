@@ -25,9 +25,7 @@ export default function Home() {
             Agung <span className="italic font-black">WIRA</span> Putra
           </h1>
           <p className="text-sm sm:text-base max-w-[50%]">
-            Product Manager with a love for problem-solving and uncovering
-            insights through data analysis.
-          </p>
+          From Poker Face to Product Ace: Strategizing Tech, UX, and Business in Product Management.</p>
           <Link
             href="/about-me"
             className="absolute -right-4 -bottom-4 px-6 whitespace-nowrap py-2 text-lg  font-extrabold bg-[#2CE0AC] retro-shadow hover:bg-[#A57EE5] transition-colors "

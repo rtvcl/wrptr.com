@@ -18,11 +18,11 @@ const navigationList: TNavigationItem[] = [
     label: "home",
   },
   {
-    href: "/blog-post",
+    href: "/post",
     label: "blog-post",
   },
   {
-    href: "/about-me",
+    href: "/about",
     label: "about-me",
   },
   {
@@ -47,7 +47,7 @@ function Navigation({}: Props) {
         <ul className="flex items-start gap-2 overflow-x-auto text-base font-semibold text-white md:mt-4 flex-nowrap whitespace-nowrap">
           {navigationList.map(({ href, label }) => (
             <Link href={href} key={label}>
-              <li className={pathname == href ? activeState : nonActiveState}>
+              <li className={pathname.split('/')[1] == href.split('/')[1] ? activeState : nonActiveState}>
                 {label}
               </li>
             </Link>
