@@ -22,10 +22,10 @@ const navigationList: TNavigationItem[] = [
     href: "/about",
     label: "about-me",
   },
-  {
-    href: "/portfolio",
-    label: "portfolio",
-  },
+  // {
+  //   href: "/portfolio",
+  //   label: "portfolio",
+  // },
   {
     href: "/roadmap",
     label: "roadmap",

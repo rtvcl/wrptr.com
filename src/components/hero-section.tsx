@@ -37,17 +37,24 @@ const HeroSection = (props: Props) => {
       </div>
       <ul className="absolute left-0 flex justify-center cursor-pointer top-[15.5rem]">
         <li className="hover:text-[#A57EE5] flex place-items-center">
-          <TiSocialTwitter size={32} />
-        </li>
-
-        <li className="hover:text-[#A57EE5] flex place-items-center">
-          <TiSocialLinkedin size={32} />
+          <Link target="_blank" href="https://twitter.com/agungwpg">
+            <TiSocialTwitter size={32} />
+          </Link>
         </li>
         <li className="hover:text-[#A57EE5] flex place-items-center">
-          <TiSocialGithub size={32} />
+          <Link target="_blank" href="https://www.linkedin.com/in/agungwpg/">
+            <TiSocialLinkedin size={32} />
+          </Link>
         </li>
         <li className="hover:text-[#A57EE5] flex place-items-center">
-          <TiSocialInstagram size={28} />
+          <Link target="_blank" href="https://github.com/agungwpg">
+            <TiSocialGithub size={32} />
+          </Link>
+        </li>
+        <li className="hover:text-[#A57EE5] flex place-items-center">
+          <Link target="_blank" href="https://www.instagram.com/agungwpg/">
+            <TiSocialInstagram size={28} />
+          </Link>
         </li>
       </ul>
     </div>
