@@ -32,3 +32,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+[reference](https://github.com/leerob/nextjs-prism-markdown/blob/main/lib/markdown.js)
+
+gray-matter -> digunakan untuk mengambil meta data pada markdown
+remark -> mengubah markdown content menjadi html
+next-mdx-remote -> gives us the ability to expand in the future and pull blogs from external sources such as a database, a CMS (Content Management System) such as Contentful or Headless Wordpress, or even an external tool such as Notion.
