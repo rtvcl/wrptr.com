@@ -4,9 +4,7 @@ import React from "react";
 type Props = {};
 
 const PostPage = (props: Props) => {
-  return (
-    <BlogListSection/>
-  );
+  return <BlogListSection />;
 };
 
 export default PostPage;

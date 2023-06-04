@@ -1,5 +1,4 @@
 
-import { getDocBySlug } from "@/lib/mdx";
 import React from "react";
 
 type Props = {
@@ -9,10 +8,6 @@ type Props = {
 };
 
 const PostDetailPage = async ({ params: { slug } }: Props) => {
-  const { content } = getDocBySlug(slug);
-  
-  console.log("🚀 ~ file: page.tsx:13 ~ PostDetailPage ~ content:", content)
-  
 
   return (
     <div className="container mx-auto">
