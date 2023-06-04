@@ -16,11 +16,9 @@ const SubscriptionForm = (props: Props) => {
 
     try {
       const response = await axios.post("/api/subscribe", { email });
-      console.log(response);
       setState("Success");
       setEmail("");
     } catch (e: any) {
-      console.log(e.response.data.error);
       setErrorMsg(e.response.data.error);
       setState("Error");
     }

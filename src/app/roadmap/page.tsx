@@ -20,9 +20,10 @@ const RoadmapPage = (props: Props) => {
   );
 };
 
-export const RoadmapList = () => (
+const RoadmapList = () => (
   <ul className="text-lg list-disc">
     <li>Subscription: Newsletter form ✅</li>
+    <li>Blogging Systems</li>
     <li>Analytics: Google Analytics or Vercel Analytics</li>
     <li>Notion integrations: as Content Management System</li>
     <li>i11n: English & Indonesia</li>

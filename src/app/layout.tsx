@@ -20,10 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${nunitoSans.className} bg-[#fafafa] `}
-        suppressHydrationWarning={true}
       >
-          <Navigation />
-          {children}
+        <Navigation />
+        {children}
       </body>
     </html>
   );
