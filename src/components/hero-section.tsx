@@ -29,7 +29,7 @@ const HeroSection = (props: Props) => {
           Product Management.
         </p>
         <Link
-          href="/about-me"
+          href="/about"
           className="absolute -right-4 -bottom-4 px-6 whitespace-nowrap py-2 text-lg  font-extrabold bg-[#2CE0AC] retro-shadow hover:bg-[#A57EE5] transition-colors "
         >
           get in touch!

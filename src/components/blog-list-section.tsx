@@ -1,4 +1,5 @@
 import { getAllDocsByType } from "@/lib/mdx";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -19,17 +20,15 @@ const BlogListSection = (props: Props) => {
           return (
             <li key={blog.slug}>
               <Link href={`/post/${blog.slug}`} className="flex space-x-4">
-                <div className="flex-shrink-0 w-32 h-24 bg-slate-300">
-                  this is image
-                </div>
-                <div className="flex flex-col ">
+                <Image width={32} height={24} className="flex-shrink-0 w-32 h-24 bg-slate-300" src={blog.meta.image || ''} alt={blog.slug}/>
+                <div className="flex flex-col">
                   <h4 className="text-base font-bold">
                     {blog.meta.title || lorem5}
                   </h4>
-                  <p className="text-sm line-clamp-2 ">
+                  <p className="mb-4 text-sm line-clamp-2">
                     {blog.meta.summary || lorem20}
                   </p>
-                  <button className="mt-auto self-start font-bold border-[#000000] border-[1px] retro-shadow-sm hover:text-white hover:bg-black transition-colors px-4 -translate-y-1">
+                  <button className="self-start font-bold border-[#000000] border-[1px] retro-shadow-sm hover:text-white hover:bg-black transition-colors px-4 -translate-y-1">
                     read more
                   </button>
                 </div>

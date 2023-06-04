@@ -19,8 +19,19 @@ export const getAllDocsByType = (type: string) => {
       content,
     };
   });
-
   return docs;
 };
 
-
+export const getDocByType = async (slug: string, type: string) => {
+  const dirPath = path.join(process.cwd(), mdxContentDir, type);
+  const fileContent = fs.readFileSync(
+    path.join(dirPath, `${slug}.mdx`),
+    "utf-8"
+  );
+  const { data, content } = matter(fileContent);
+  return {
+    meta: data,
+    slug,
+    content,
+  };
+};
