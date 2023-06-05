@@ -36,7 +36,7 @@ const HeroSection = (props: Props) => {
         </p>
         <Link
           href="/about"
-          className="absolute -right-4 -bottom-4 px-6 whitespace-nowrap py-2 text-lg  font-extrabold bg-[#2CE0AC] retro-shadow hover:bg-[#A57EE5] transition-colors "
+          className="absolute -right-4 -bottom-4 px-6 whitespace-nowrap py-2 text-lg  font-extrabold bg-[#2CE0AC] retro-shadow hover:bg-[#A57EE5] transition-colors -rotate-3"
         >
           get in touch!
         </Link>

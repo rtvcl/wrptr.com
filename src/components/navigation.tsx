@@ -41,8 +41,6 @@ function Navigation({}: Props) {
   const [scrollY, setScrollY] = useState(0);
   const onScroll = useCallback(() => {
     const { pageYOffset, scrollY } = window;
-    console.log("yOffset", pageYOffset, "scrollY", scrollY);
-    console.log(scrollY > 0)
     setScrollY(window.pageYOffset);
   }, []);
   useEffect(() => {
