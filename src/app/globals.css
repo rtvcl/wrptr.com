@@ -9,6 +9,14 @@
   box-shadow: 3px 3px 0px #000000;
 }
 
+.retro-card {
+  background: #fff;
+  border-radius: 1rem;
+  border: .5vmin solid #05060f;
+  box-shadow: .4rem .4rem #05060f;
+  overflow: hidden;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }

@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
-import {  useSelectedLayoutSegment } from "next/navigation";
+import { useSelectedLayoutSegment } from "next/navigation";
+import { useCallback, useEffect, useState } from "react";
 
 type Props = {};
 
@@ -34,12 +35,31 @@ const navigationList: TNavigationItem[] = [
 
 function Navigation({}: Props) {
   const segment = useSelectedLayoutSegment() || "";
-
   const activeState = `flex-shrink-0 px-2 py-2 bg-black after:content-[''] relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-1 after:bg-[#A57EE5]`;
   const nonActiveState = `flex-shrink-0 px-2 transition-all bg-black cursor-pointer hover:py-2`;
 
+  const [scrollY, setScrollY] = useState(0);
+  const onScroll = useCallback(() => {
+    const { pageYOffset, scrollY } = window;
+    console.log("yOffset", pageYOffset, "scrollY", scrollY);
+    console.log(scrollY > 0)
+    setScrollY(window.pageYOffset);
+  }, []);
+  useEffect(() => {
+    //add eventlistener to window
+    window.addEventListener("scroll", onScroll, { passive: true });
+    // remove event on unmount to prevent a memory leak with the cleanup
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, [onScroll]);
+
   return (
-    <div className="sticky top-0 z-50 pb-4 pl-4 bg-[#fafafa] md:flex md:ml-0 md:justify-center md:items-center sm:gap-8">
+    <div
+      className={`sticky top-0 z-50 pb-4 pl-4 md:flex md:ml-0 md:justify-center md:items-center sm:gap-8 transition-colors ${
+        scrollY > 0 ? "bg-[#f4f4f4]" : "bg-transparent"
+      }`}
+    >
       <Link href="/">
         <span className="text-3xl font-black leading-loose">wrptr.com</span>
       </Link>

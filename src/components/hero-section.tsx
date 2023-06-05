@@ -13,9 +13,15 @@ type Props = {};
 
 const HeroSection = (props: Props) => {
   return (
-    <div className="relative mx-4 mb-8 sm:max-w-lg sm:mx-auto h-60">
+    <div className="relative mx-4 my-8 sm:max-w-lg sm:mx-auto h-60 ">
+    <Image
+        className="scale-[1.8] rotate-3 scale-x-[2.4]"
+        src="/bg-ornament.png"
+        alt="ornament"
+        fill
+      />
       <Image
-        className="object-cover"
+        className="object-cover border-2 border-black retro-shadow-sm"
         src="/hero-img.png"
         alt="hero"
         fill={true}
