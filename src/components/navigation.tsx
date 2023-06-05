@@ -39,7 +39,7 @@ function Navigation({}: Props) {
   const nonActiveState = `flex-shrink-0 px-2 transition-all bg-black cursor-pointer hover:py-2`;
 
   return (
-    <div className="sticky top-0 z-50 pb-4 ml-4 bg-[#fafafa] md:flex md:ml-0 md:justify-center md:items-center sm:gap-8">
+    <div className="sticky top-0 z-50 pb-4 pl-4 bg-[#fafafa] md:flex md:ml-0 md:justify-center md:items-center sm:gap-8">
       <Link href="/">
         <span className="text-3xl font-black leading-loose">wrptr.com</span>
       </Link>
