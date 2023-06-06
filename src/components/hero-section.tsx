@@ -15,7 +15,7 @@ const HeroSection = (props: Props) => {
   return (
     <div className="relative mx-4 my-8 sm:max-w-lg sm:mx-auto h-60 ">
     <Image
-        className="scale-[1.8] rotate-3 scale-x-[2.4]"
+        className="scale-[1.8] rotate-3 scale-x-[2.4] mix-blend-multiply"
         src="/bg-ornament.png"
         alt="ornament"
         fill
