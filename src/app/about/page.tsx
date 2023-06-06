@@ -21,7 +21,7 @@ const AboutPage = (props: Props) => {
           className="retro-shadow flex-shrink-0 border-[#000000] border-[2px] object-cover"
           alt="about"
         />
-        <div className="retro-shadow p-4 border-[#000000] border-[2px] flex-1 flex flex-col">
+        <div className="retro-shadow p-4 bg-white border-[#000000] border-[2px] flex-1 flex flex-col">
           <h3>Contacts</h3>
           <ul>
             <li className="flex items-center space-x-4">
@@ -54,7 +54,7 @@ const AboutPage = (props: Props) => {
           </Link>
         </div>
       </div>
-      <div className="max-w-xl p-4 mx-4 sm:mx-auto retro-shadow border-[#000000] border-[2px] space-y-4">
+      <div className="bg-white max-w-xl p-4 mx-4 sm:mx-auto retro-shadow border-[#000000] border-[2px] space-y-4">
         <h1 className="mb-2 text-xl font-bold ">
           Agung <span className="italic font-black">WIRA</span> Putra
         </h1>

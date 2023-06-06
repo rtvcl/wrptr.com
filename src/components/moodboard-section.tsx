@@ -5,7 +5,7 @@ type Props = {};
 
 const MoodboardSection = (props: Props) => {
   return (
-    <div className="max-w-2xl p-4 mt-6 text-white bg-black rounded-t-[28px] md:mx-auto">
+    <div className="max-w-2xl p-4 mt-6 text-white bg-black rounded-t-[28px] md:mx-auto" style={{background: "no-repeat center / cover url('dark-concrete-texture-background.jpg')"}}>
       <section className="max-w-xl mx-auto ">
         <h3 className="mb-4 text-2xl font-black ">/moodboard</h3>
         <div className="space-y-4">
