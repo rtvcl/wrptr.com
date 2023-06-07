@@ -4,7 +4,7 @@ type Props = {};
 
 const RoadmapPage = (props: Props) => {
   return (
-    <section className="max-w-xl sm:mx-auto">
+    <section className="pb-24 mx-4 md:mx-auto ">
       <h1 className="mb-4 text-4xl font-black ">/roadmap</h1>
       <div className="space-y-4">
         <p>
@@ -14,6 +14,7 @@ const RoadmapPage = (props: Props) => {
           into the exciting features and enhancements I have planned for my
           website.
         </p>
+        <h2 className="text-gray-400">((styling work in progres...))</h2>
         <RoadmapList />
       </div>
     </section>
@@ -21,7 +22,7 @@ const RoadmapPage = (props: Props) => {
 };
 
 const RoadmapList = () => (
-  <ul className="text-lg list-disc">
+  <ul className="">
     <li>Subscription: Newsletter form ✅</li>
     <li>Blogging Systems</li>
     <li>Analytics: Google Analytics or Vercel Analytics</li>

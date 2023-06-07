@@ -56,7 +56,7 @@ const AboutPage = (props: Props) => {
           </Link>
         </div>
       </div>
-      <div className="bg-white max-w-xl p-4 mx-4 sm:mx-auto retro-shadow border-[#000000] border-[2px] space-y-4">
+      <div className="bg-white max-w-xl p-4 mx-4 sm:mx-auto retro-shadow border-[#000000] border-[2px] space-y-4 mb-24">
         <h1 className="mb-2 text-xl font-bold ">
           Agung <span className="italic font-black">WIRA</span> Putra
         </h1>
