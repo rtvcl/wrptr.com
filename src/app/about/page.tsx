@@ -28,7 +28,7 @@ const AboutPage = (props: Props) => {
           <ul>
             <li className="flex items-center space-x-4">
               <TiMail size={32} />
-              <span>agungwpg@ggmail.com</span>
+              <span>agungwpg@gmail.com</span>
             </li>
             <li>
               <Link className="flex items-center space-x-4 hover:text-[#A57EE5]" href="https://www.linkedin.com/in/agungwpg/" target="_blank">
