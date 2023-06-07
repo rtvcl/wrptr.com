@@ -24,7 +24,7 @@ const HeroSection = (props: Props) => {
         fill
       />
       <Image
-        className="object-cover border-2 border-black retro-shadow-sm"
+        className="object-cover bg-cover border-2 border-black retro-shadow-sm"
         src={ImgHero}
         alt="hero"
         fill={true}
