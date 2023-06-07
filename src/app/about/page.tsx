@@ -8,6 +8,8 @@ import {
   TiSocialLinkedin,
 } from "react-icons/ti";
 
+import ImgAbout1 from '@/assets/img/about-img-1.png'
+
 type Props = {};
 
 const AboutPage = (props: Props) => {
@@ -17,7 +19,7 @@ const AboutPage = (props: Props) => {
         <Image
           width={240}
           height={100}
-          src="/about-img.jpg"
+          src={ImgAbout1}
           className="retro-shadow flex-shrink-0 border-[#000000] border-[2px] object-cover"
           alt="about"
         />

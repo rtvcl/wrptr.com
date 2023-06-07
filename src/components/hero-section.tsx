@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+import ImgPinkSplash from '@/assets/img/pink-splash-1.png'
+import ImgHero from '@/assets/img/hero-img.png'
+
 import {
   TiSocialTwitter,
   TiSocialLinkedin,
@@ -16,13 +19,13 @@ const HeroSection = (props: Props) => {
     <div className="relative mx-4 my-8 sm:max-w-lg sm:mx-auto h-60 ">
     <Image
         className="scale-[1.8] rotate-3 scale-x-[2.4] mix-blend-multiply"
-        src="/bg-ornament.png"
+        src={ImgPinkSplash}
         alt="ornament"
         fill
       />
       <Image
         className="object-cover border-2 border-black retro-shadow-sm"
-        src="/hero-img.png"
+        src={ImgHero}
         alt="hero"
         fill={true}
       />

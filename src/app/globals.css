@@ -13,7 +13,7 @@ body::before {
   height: 100vh;
   opacity: 0.2;
   z-index: -50;
-  background: no-repeat center / cover url('../../public/bg-body.jpg');
+  background: no-repeat center / cover url('../assets/img/grunge-texture-light-1.jpg');
 }
 .retro-shadow {
   box-shadow: 4px 4px 0px #000000;

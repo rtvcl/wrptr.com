@@ -25,7 +25,7 @@ const SubscriptionForm = (props: Props) => {
   };
 
   return (
-    <div className="relative max-w-2xl p-4 mx-2 shadow-md sm:p-6 sm:mx-auto">
+    <div className="relative max-w-2xl p-4 mx-2 mt-12 bg-white shadow-md sm:p-6 sm:mx-auto">
       <h4 className="text-lg font-semibold ">
         don&apos;t miss out.
         <span className="ml-2 text-xs opacity-50">
