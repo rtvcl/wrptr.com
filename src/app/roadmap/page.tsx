@@ -14,7 +14,7 @@ const RoadmapPage = (props: Props) => {
           into the exciting features and enhancements I have planned for my
           website.
         </p>
-        <h2 className="text-gray-400">((styling work in progres...))</h2>
+        <h2 className="text-gray-400">((styling work in progress...))</h2>
         <RoadmapList />
       </div>
     </section>
