@@ -1,12 +1,13 @@
 import { RoadmapSection } from "@/components/roadmap";
 import React from "react";
 import { TiSocialTumbler } from "react-icons/ti";
+import { dataWebsiteRoadmap } from "./data";
 
 type Props = {};
 
 const RoadmapPage = (props: Props) => {
   return (
-    <section className="max-w-screen-lg mx-4 lg:mx-auto">
+    <section className="max-w-screen-lg mx-4 mb-12 lg:mx-auto">
       <h1 className="mb-4 text-4xl font-black ">/roadmap</h1>
       <div className="space-y-4">
         <p className="max-w-xl">
@@ -18,17 +19,7 @@ const RoadmapPage = (props: Props) => {
         </p>
         <RoadmapSection
           title="website"
-          itemList={[
-            {
-              title: "General Information",
-              Icon: TiSocialTumbler,
-              content: [
-                { roadmapTitle: "asdas", isDone: true },
-                { roadmapTitle: "adasjndijan", isDone: false },
-                { roadmapTitle: "adasd", isDone: false },
-              ],
-            },
-          ]}
+          itemList={dataWebsiteRoadmap}
         />
       </div>
     </section>
