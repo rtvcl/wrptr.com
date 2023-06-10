@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
+
+    console.log('test')
+
   let nodemailer = require("nodemailer");
   const transporter = nodemailer.createTransport({
     port: 465,
