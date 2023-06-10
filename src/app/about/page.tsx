@@ -12,6 +12,8 @@ import {
 } from "react-icons/ti";
 
 import ImgAbout1 from '@/assets/img/about-img-1.png'
+import ContactMeForm from "@/components/contact-me-form";
+import { FooterTrademark } from "@/components/moodboard-section";
 
 type Props = {};
 
@@ -71,7 +73,15 @@ const AboutPage = (props: Props) => {
         <p>
         I&apos;m currently rocking the role of a product manager at a tech company. Our mission? Empowering Indonesian MSMEs to conquer the online world and embrace all things digital. I&apos;ve been at the forefront, orchestrating promotions, analytics, and now, on a thrilling adventure to amp up our merchant buyers&apos; experience. 
         </p>
+        
       </div>
+      <p className="mt-4 text-center">* * *</p>
+
+      <p className="max-w-2xl mx-4 sm:mx-auto text-md text-center mb-8">
+        In addition to my role as a product manager, I thrive on exploring exciting side-hustles during my free time. If you have an idea or a project that aligns with my expertise in product management, web development, or any cutting-edge technologies, I&apos;m all ears. Let&apos;s have a conversation and see how we can collaborate to turn your vision into a reality. 
+        </p>
+      <ContactMeForm/>
+      <FooterTrademark/>
     </>
   );
 };

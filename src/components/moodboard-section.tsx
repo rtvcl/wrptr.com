@@ -5,15 +5,22 @@ import ImgGrungeTextureDark1 from "@/assets/img/grunge-texture-dark-1.jpg";
 
 type Props = {};
 
-const MoodboardSection = (props: Props) => {
+export const BlackGrungeSection = ({ children, className }: { children: React.ReactNode; className?: string }) => {
   return (
     <div
-      className="max-w-2xl p-4 mt-6 text-white bg-black rounded-t-[28px] md:mx-auto"
+      className={`text-white rounded-t-[28px] ${className}`}
       style={{
-        background:
-          `no-repeat center / cover url(${ImgGrungeTextureDark1.src})`,
+        background: `no-repeat center / cover url(${ImgGrungeTextureDark1.src})`,
       }}
     >
+      {children}
+    </div>
+  );
+};
+
+const MoodboardSection = (props: Props) => {
+  return (
+    <BlackGrungeSection className="max-w-2xl p-4 mt-6  md:mx-auto">
       <section className="max-w-xl mx-auto ">
         <h3 className="mb-4 text-2xl font-black ">/moodboard</h3>
         <div className="space-y-4">
@@ -39,11 +46,15 @@ const MoodboardSection = (props: Props) => {
         </div>
       </section>
       <p className="mt-4 text-center">* * *</p>
-      <footer className="text-sm text-center ">
-        designed and developed with 💗 by Wira in 2023
-      </footer>
-    </div>
+      <FooterTrademark/>
+    </BlackGrungeSection>
   );
 };
+
+export const FooterTrademark = () => (
+  <footer className="text-sm text-center mb-4 ">
+        designed and developed with 💗 by Wira in 2023
+      </footer>
+)
 
 export default MoodboardSection;

@@ -1,5 +1,5 @@
 import { RoadmapGroup } from "@/components/roadmap";
-import { TiBook, TiHome, TiMediaStop, TiNews } from "react-icons/ti";
+import { TiBook, TiHome, TiMediaStop, TiNews, TiUser } from "react-icons/ti";
 
 export const dataWebsiteRoadmap: RoadmapGroup[] = [
     {
@@ -8,7 +8,6 @@ export const dataWebsiteRoadmap: RoadmapGroup[] = [
       color: 'bg-pink-600',
       content: [
         { roadmapTitle: "Analytics Tracking", isDone: true },
-        { roadmapTitle: "Contact Me Form", isDone: false },
         { roadmapTitle: "SEO Support", isDone: false },
         { roadmapTitle: "i11n: Enlish, Indonesia", isDone: false },
       ],
@@ -33,6 +32,17 @@ export const dataWebsiteRoadmap: RoadmapGroup[] = [
         { roadmapTitle: "Notion Integrations", isDone: false },
         { roadmapTitle: "Meta Data, Tags/Categories", isDone: false },
         { roadmapTitle: "Code Highlight & Comment Section", isDone: false },
+      ],
+    },
+    {
+      title: "About Me",
+      Icon: TiUser,
+      color: 'bg-[#2CE0AC]',
+      content: [
+        { roadmapTitle: "Contact Me Form", isDone: true },
+        { roadmapTitle: "Tools / Framework / Area", isDone: false },
+        { roadmapTitle: "Values / Leadership styles", isDone: false },
+        { roadmapTitle: "Work Experiences", isDone: false },
       ],
     },
     {
