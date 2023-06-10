@@ -22,16 +22,13 @@ export async function POST(req: NextRequest) {
     html: `<div>${bodyRequest.message}</div>`,
   };
 
-  let test;
-  transporter.sendMail(mailData, function (err: any, info: any) {
+  const mailresponse = transporter.sendMail(mailData, function (err: any, info: any) {
     if (err) {
       console.log(err);
-      test = info;
     } else {
       console.log(info);
-      test = info;
     }
   });
 
-  return NextResponse.json({ message: "success send message",test,mailData });
+  return NextResponse.json({ message: "success send message",mailresponse,mailData });
 }
