@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
   const bodyRequest = await req.json();
 
   const mailData = {
-    from: "local@local.com",
+    from: "khainciller@gmail.com",
     to: "khainciller@gmail.com",
     subject: `Message From ${bodyRequest.name}`,
     text: bodyRequest.message,
