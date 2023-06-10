@@ -7,8 +7,8 @@ export const dataWebsiteRoadmap: RoadmapGroup[] = [
       Icon: TiHome,
       color: 'bg-pink-600',
       content: [
+        { roadmapTitle: "Analytics Tracking", isDone: true },
         { roadmapTitle: "Contact Me Form", isDone: false },
-        { roadmapTitle: "Analytics Tracking", isDone: false },
         { roadmapTitle: "SEO Support", isDone: false },
         { roadmapTitle: "i11n: Enlish, Indonesia", isDone: false },
       ],
