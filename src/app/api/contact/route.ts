@@ -1,34 +1,29 @@
-import axios from "axios";
 import { NextRequest, NextResponse } from "next/server";
 
+const nodemailer = require("nodemailer");
+
 export async function POST(req: NextRequest) {
-  let nodemailer = require("nodemailer");
   const transporter = nodemailer.createTransport({
-    port: 465,
     host: "smtp.gmail.com",
-    auth: {
-      user: process.env.GMAILUSER,
-      pass: process.env.GMAILPASS,
-    },
+    port: 465,
     secure: true,
+    auth: {
+      user: process.env.GMAIL_EMAIL_ADDRESS,
+      pass: process.env.GMAIL_EMAIL_PASSWORD,
+    },
   });
 
   const bodyRequest = await req.json();
 
-  const mailData = {
-    from: 'local@local.com',
-    to: 'khainciller@gmail.com',
-    subject: `Message From ${bodyRequest.name}`,
+  const mailContent = {
+    from: "khaiciller@gmail.com",
+    to: "khainciller@gmail.com",
+    subject: `Message From ${bodyRequest.name} <${bodyRequest.email}>`,
     text: bodyRequest.message,
-    html: `<div>${bodyRequest.message}</div>`
-   }
+    html: `<div>${bodyRequest.message}</div>`,
+  };
 
-   transporter.sendMail(mailData, function (err: any, info: any) {
-    if(err)
-      console.log(err)
-    else
-      console.log(info)
-  })
-
-  return NextResponse.json({ message: "success send message" });
+  let info = await transporter.sendMail(mailContent);
+  
+  return NextResponse.json({ message: "success send message", messageId: info.messageId });
 }

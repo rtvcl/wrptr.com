@@ -9,7 +9,7 @@ export const dataWebsiteRoadmap: RoadmapGroup[] = [
       content: [
         { roadmapTitle: "Analytics Tracking", isDone: true },
         { roadmapTitle: "SEO Support", isDone: false },
-        { roadmapTitle: "i11n: Enlish, Indonesia", isDone: false },
+        { roadmapTitle: "i11n: English, Indonesia", isDone: false },
       ],
     },
     {
