@@ -13,7 +13,7 @@ const PostDetailPage = async ({ params: { slug } }: Props) => {
   return (
     <article className="pb-24 mx-4 prose-sm prose md:mx-auto md:prose-base lg:prose-lg ">
       {/* @ts-expect-error Server Component*/}
-      <MDXRemote source={blog.content}/>
+      <MDXRemote source={blog.content} />
     </article>
   );
 };

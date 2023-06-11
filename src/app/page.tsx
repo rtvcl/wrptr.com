@@ -9,7 +9,7 @@ export default function Home() {
       <HeroSection />
       <SubscriptionForm />
       <BlogListSection />
-      <MoodboardSection/>
+      <MoodboardSection />
     </>
   );
 }

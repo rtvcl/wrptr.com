@@ -8,7 +8,7 @@ import {
   TiSocialLinkedin,
 } from "react-icons/ti";
 
-import ImgAbout1 from '@/assets/img/about-img-1.png'
+import ImgAbout1 from "@/assets/img/about-img-1.png";
 import ContactMeForm from "@/components/contact-me-form";
 import { FooterTrademark } from "@/components/moodboard-section";
 
@@ -33,13 +33,21 @@ const AboutPage = (props: Props) => {
               <span>agungwpg@gmail.com</span>
             </li>
             <li>
-              <Link className="flex items-center space-x-4 hover:text-[#A57EE5]" href="https://www.linkedin.com/in/agungwpg/" target="_blank">
+              <Link
+                className="flex items-center space-x-4 hover:text-[#A57EE5]"
+                href="https://www.linkedin.com/in/agungwpg/"
+                target="_blank"
+              >
                 <TiSocialLinkedin size={32} />
                 <span>Connect on LinkedIn</span>
               </Link>
             </li>
-            <li >
-              <Link className="flex items-center space-x-4 hover:text-[#A57EE5]" href="https://github.com/agungwpg" target="_blank">
+            <li>
+              <Link
+                className="flex items-center space-x-4 hover:text-[#A57EE5]"
+                href="https://github.com/agungwpg"
+                target="_blank"
+              >
                 <TiSocialGithub size={32} />
                 <span>Follow on Github</span>
               </Link>
@@ -68,9 +76,12 @@ const AboutPage = (props: Props) => {
           problems as a Product Manager.
         </p>
         <p>
-        I&apos;m currently rocking the role of a product manager at a tech company. Our mission? Empowering Indonesian MSMEs to conquer the online world and embrace all things digital. I&apos;ve been at the forefront, orchestrating promotions, analytics, and now, on a thrilling adventure to amp up our merchant buyers&apos; experience. 
+          I&apos;m currently rocking the role of a product manager at a tech
+          company. Our mission? Empowering Indonesian MSMEs to conquer the
+          online world and embrace all things digital. I&apos;ve been at the
+          forefront, orchestrating promotions, analytics, and now, on a
+          thrilling adventure to amp up our merchant buyers&apos; experience.
         </p>
-        
       </div>
       <p className="mt-4 text-center">* * *</p>
 
