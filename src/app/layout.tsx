@@ -9,7 +9,7 @@ const nunitoSans = Nunito_Sans({ subsets: ["latin"] });
 export const metadata = {
   title: "wrptr | data detective",
   description:
-    "Product Manager with a love for problem-solving and uncovering insights through data analysis.",
+    "Hailing from the tech world, I'm on a thrilling mission to discover the perfect fusion of Business, Tech, and Design. Armed with this powerful trifecta, I'm geared up to tackle user problems head-on as a Product Manager.",
 };
 
 export default function RootLayout({
