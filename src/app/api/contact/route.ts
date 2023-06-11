@@ -4,18 +4,30 @@ const nodemailer = require("nodemailer");
 
 export async function POST(req: NextRequest) {
   const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
     port: 465,
-    secure: true,
+    host: "smtp.gmail.com",
     auth: {
       user: process.env.GMAIL_EMAIL_ADDRESS,
       pass: process.env.GMAIL_EMAIL_PASSWORD,
     },
+    secure: true,
+  });
+
+  await new Promise((resolve, reject) => {
+    transporter.verify((err: any, success: any) => {
+      if (err) {
+        console.log(err);
+        reject(err);
+      } else {
+        console.log("Server is ready to take our messages");
+        resolve(success);
+      }
+    });
   });
 
   const bodyRequest = await req.json();
 
-  const mailContent = {
+  const mailData = {
     from: "khaiciller@gmail.com",
     to: "khainciller@gmail.com",
     subject: `Message From ${bodyRequest.name} <${bodyRequest.email}>`,
@@ -23,7 +35,27 @@ export async function POST(req: NextRequest) {
     html: `<div>${bodyRequest.message}</div>`,
   };
 
-  let info = await transporter.sendMail(mailContent);
-  
-  return NextResponse.json({ message: "success send message", messageId: info.messageId });
+  const sendMail = new Promise((resolve, reject) => {
+    transporter.sendMail(mailData, (err: any, info: any) => {
+      if (err) {
+        console.log(err);
+        reject(err);
+      } else {
+        console.log(info);
+        resolve(info);
+      }
+    });
+  });
+
+  let info;
+  try {
+    info = await sendMail;
+  } catch (error) {
+    info = error;
+  }
+
+  return NextResponse.json({
+    message: "success send message",
+    info,
+  });
 }
