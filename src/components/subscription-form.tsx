@@ -1,7 +1,7 @@
 "use client";
 import axios from "axios";
 import { FormEvent, useState } from "react";
-import {ImSpinner8} from 'react-icons/im'
+import { ImSpinner8 } from "react-icons/im";
 
 type Props = {};
 
@@ -48,13 +48,23 @@ const SubscriptionForm = (props: Props) => {
           onClick={subscribe}
           className=" px-4 text-base font-bold border-[#000000] border-[1px] retro-shadow-sm hover:text-white hover:bg-black transition-colors flex gap-2 items-center "
         >
-          {state === "Loading" ? (<>
-            <ImSpinner8 className=" animate-spin"/> Loading...
-          </>): 'subscribe'} 
+          {state === "Loading" ? (
+            <>
+              <ImSpinner8 className=" animate-spin" /> Loading...
+            </>
+          ) : (
+            "subscribe"
+          )}
         </button>
       </form>
-      {state === "Error" && <p className="mt-2 text-xs text-red-700 opacity-50">{errorMsg}</p>}
-      {state === "Success" && <p className="mt-2 text-xs opacity-50">Awesome, you&apos;ve been subscribed!</p>}
+      {state === "Error" && (
+        <p className="mt-2 text-xs text-red-700 opacity-50">{errorMsg}</p>
+      )}
+      {state === "Success" && (
+        <p className="mt-2 text-xs opacity-50">
+          Awesome, you&apos;ve been subscribed!
+        </p>
+      )}
     </div>
   );
 };

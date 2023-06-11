@@ -17,10 +17,7 @@ const RoadmapPage = (props: Props) => {
           into the exciting features and enhancements I have planned for my
           website.
         </p>
-        <RoadmapSection
-          title="website"
-          itemList={dataWebsiteRoadmap}
-        />
+        <RoadmapSection title="website" itemList={dataWebsiteRoadmap} />
       </div>
     </section>
   );

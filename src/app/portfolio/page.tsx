@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const PortfolioPage = (props: Props) => {
-  return (
-    <div>PortfolioPage</div>
-  )
-}
+  return <div>PortfolioPage</div>;
+};
 
-export default PortfolioPage
+export default PortfolioPage;

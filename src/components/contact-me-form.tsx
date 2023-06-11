@@ -1,43 +1,43 @@
-'use client'
+"use client";
 import { useState } from "react";
 import { BlackGrungeSection } from "./moodboard-section";
 
 type Props = {};
 
 const ContactMeForm = (props: Props) => {
-    const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-    async function handleSubmit(event: any) {
-		event.preventDefault();
-		setLoading(true);
+  async function handleSubmit(event: any) {
+    event.preventDefault();
+    setLoading(true);
 
-		const data = {
-			name: String(event.target.name.value),
-			email: String(event.target.email.value),
-			message: String(event.target.message.value),
-		};
+    const data = {
+      name: String(event.target.name.value),
+      email: String(event.target.email.value),
+      message: String(event.target.message.value),
+    };
 
-		const response = await fetch("/api/contact", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-			},
-			body: JSON.stringify(data),
-		});
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
 
-		if (response.ok) {
-			setLoading(false);
-			// reset the form
-			event.target.name.value = "";
-			event.target.email.value = "";
-			event.target.message.value = "";
-		}
-		if (!response.ok) {
-			setLoading(false);
-		}
-	}
+    if (response.ok) {
+      setLoading(false);
+      // reset the form
+      event.target.name.value = "";
+      event.target.email.value = "";
+      event.target.message.value = "";
+    }
+    if (!response.ok) {
+      setLoading(false);
+    }
+  }
 
-    return (
+  return (
     <BlackGrungeSection className="max-w-screen-md px-8 py-8 mx-auto rounded-[28px] mb-4">
       <h2 className="text-2xl font-bold">Ready to connect?</h2>
       <p>
@@ -91,13 +91,12 @@ const ContactMeForm = (props: Props) => {
           />
         </div>
         <div>
-        <button
-        disabled={loading}
+          <button
+            disabled={loading}
             className=" disabled:bg-gray-400 px-6 whitespace-nowrap py-2 text-lg w-full font-extrabold bg-[#2CE0AC] retro-shadow hover:bg-[#A57EE5] transition-colors rotate-1 mt-4"
           >
             <div className="-rotate-1">
-            {!loading ? 'Send Message': 'Sending...'}
-
+              {!loading ? "Send Message" : "Sending..."}
             </div>
           </button>
         </div>

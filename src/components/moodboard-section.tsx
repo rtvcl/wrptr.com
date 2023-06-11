@@ -5,7 +5,13 @@ import ImgGrungeTextureDark1 from "@/assets/img/grunge-texture-dark-1.jpg";
 
 type Props = {};
 
-export const BlackGrungeSection = ({ children, className }: { children: React.ReactNode; className?: string }) => {
+export const BlackGrungeSection = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
   return (
     <div
       className={`text-white rounded-t-[28px] ${className}`}
@@ -44,15 +50,15 @@ const MoodboardSection = (props: Props) => {
         </div>
       </section>
       <p className="mt-4 text-center">* * *</p>
-      <FooterTrademark/>
+      <FooterTrademark />
     </BlackGrungeSection>
   );
 };
 
 export const FooterTrademark = () => (
   <footer className="mb-4 text-sm text-center ">
-        designed and developed with 💗 by Wira in 2023
-      </footer>
-)
+    designed and developed with 💗 by Wira in 2023
+  </footer>
+);
 
 export default MoodboardSection;
