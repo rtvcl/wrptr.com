@@ -8,6 +8,7 @@ export const dataWebsiteRoadmap: RoadmapGroup[] = [
       color: 'bg-pink-600',
       content: [
         { roadmapTitle: "Analytics Tracking", isDone: true },
+        { roadmapTitle: "Desktop Version UI/UX", isDone: false },
         { roadmapTitle: "SEO Support", isDone: false },
         { roadmapTitle: "i11n: English, Indonesia", isDone: false },
       ],

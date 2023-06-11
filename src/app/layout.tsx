@@ -7,7 +7,7 @@ import {Analytics} from '@vercel/analytics/react'
 const nunitoSans = Nunito_Sans({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "wrptr | data detective",
+  title: "wrptr | product enthusiast",
   description:
     "Hailing from the tech world, I'm on a thrilling mission to discover the perfect fusion of Business, Tech, and Design. Armed with this powerful trifecta, I'm geared up to tackle user problems head-on as a Product Manager.",
 };

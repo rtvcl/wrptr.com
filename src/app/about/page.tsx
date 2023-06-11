@@ -6,9 +6,6 @@ import {
   TiMap,
   TiSocialGithub,
   TiSocialLinkedin,
-  TiInputChecked,
-  TiTimes,
-  TiSocialTumbler
 } from "react-icons/ti";
 
 import ImgAbout1 from '@/assets/img/about-img-1.png'
@@ -77,7 +74,7 @@ const AboutPage = (props: Props) => {
       </div>
       <p className="mt-4 text-center">* * *</p>
 
-      <p className="max-w-2xl mx-4 sm:mx-auto text-md text-center mb-8">
+      <p className="max-w-2xl mx-4 mb-8 text-center sm:mx-auto text-md">
         In addition to my role as a product manager, I thrive on exploring exciting side-hustles during my free time. If you have an idea or a project that aligns with my expertise in product management, web development, or any cutting-edge technologies, I&apos;m all ears. Let&apos;s have a conversation and see how we can collaborate to turn your vision into a reality. 
         </p>
       <ContactMeForm/>
