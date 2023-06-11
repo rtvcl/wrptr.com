@@ -28,14 +28,14 @@ export async function POST(req: NextRequest) {
   const bodyRequest = await req.json();
 
   const mailData = {
-    from: "khaiciller@gmail.com",
-    to: "khainciller@gmail.com",
+    from: process.env.GMAIL_EMAIL_ADDRESS,
+    to: process.env.GMAIL_EMAIL_ADDRESS,
     subject: `Message From ${bodyRequest.name} <${bodyRequest.email}>`,
     text: bodyRequest.message,
     html: `<div>${bodyRequest.message}</div>`,
   };
 
-  const sendMail = new Promise((resolve, reject) => {
+  await new Promise((resolve, reject) => {
     transporter.sendMail(mailData, (err: any, info: any) => {
       if (err) {
         console.log(err);
@@ -47,15 +47,7 @@ export async function POST(req: NextRequest) {
     });
   });
 
-  let info;
-  try {
-    info = await sendMail;
-  } catch (error) {
-    info = error;
-  }
-
   return NextResponse.json({
     message: "success send message",
-    info,
   });
 }

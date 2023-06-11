@@ -26,7 +26,6 @@ const ContactMeForm = (props: Props) => {
 		});
 
 		if (response.ok) {
-			console.log("Message sent successfully");
 			setLoading(false);
 			// reset the form
 			event.target.name.value = "";
@@ -34,14 +33,13 @@ const ContactMeForm = (props: Props) => {
 			event.target.message.value = "";
 		}
 		if (!response.ok) {
-			console.log("Error sending message");
 			setLoading(false);
 		}
 	}
 
     return (
     <BlackGrungeSection className="max-w-screen-md px-8 py-8 mx-auto rounded-[28px] mb-4">
-      <h2 className="font-bold text-2xl">Ready to connect?</h2>
+      <h2 className="text-2xl font-bold">Ready to connect?</h2>
       <p>
         Drop me a line using the contact form below. Let&apos;s chat about tech,
         web development, or anything that piques your interest.
