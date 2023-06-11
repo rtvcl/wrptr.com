@@ -20,7 +20,7 @@ export const BlackGrungeSection = ({ children, className }: { children: React.Re
 
 const MoodboardSection = (props: Props) => {
   return (
-    <BlackGrungeSection className="max-w-2xl p-4 mt-6  md:mx-auto">
+    <BlackGrungeSection className="max-w-2xl p-4 mt-6 md:mx-auto">
       <section className="max-w-xl mx-auto ">
         <h3 className="mb-4 text-2xl font-black ">/moodboard</h3>
         <div className="space-y-4">
@@ -39,9 +39,7 @@ const MoodboardSection = (props: Props) => {
           <p>
             As a product manager with a strong interest in tech and engineering,
             I know that a website is more than just a digital presence –
-            it&apos;s an extension of my personal brand. That&apos;s why
-            I&apos;m working on this moodboard as my initial intention for my
-            website styles.{" "}
+            it&apos;s an extension of my personal brand.
           </p>
         </div>
       </section>
@@ -52,7 +50,7 @@ const MoodboardSection = (props: Props) => {
 };
 
 export const FooterTrademark = () => (
-  <footer className="text-sm text-center mb-4 ">
+  <footer className="mb-4 text-sm text-center ">
         designed and developed with 💗 by Wira in 2023
       </footer>
 )
