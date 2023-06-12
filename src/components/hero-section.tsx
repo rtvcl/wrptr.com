@@ -11,6 +11,7 @@ import {
   TiSocialGithub,
   TiSocialInstagram,
 } from "react-icons/ti";
+import {SiTiktok} from 'react-icons/si'
 
 type Props = {};
 
@@ -46,6 +47,11 @@ const HeroSection = (props: Props) => {
           </Link>
         </div>
         <ul className="absolute left-0 flex justify-center cursor-pointer top-[15.5rem]">
+          <li className="hover:text-[#2CE0AC] flex place-items-center">
+            <Link target="_blank" href="https://www.tiktok.com/@wrptr.com?is_from_webapp=1&sender_device=pc">
+              <SiTiktok size={24} />
+            </Link>
+          </li>
           <li className="hover:text-[#2CE0AC] flex place-items-center">
             <Link target="_blank" href="https://twitter.com/agungwpg">
               <TiSocialTwitter size={32} />
