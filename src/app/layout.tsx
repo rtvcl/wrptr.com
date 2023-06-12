@@ -10,6 +10,25 @@ export const metadata = {
   title: "wrptr | product enthusiast",
   description:
     "Hailing from the tech world, I'm on a thrilling mission to discover the perfect fusion of Business, Tech, and Design. Armed with this powerful trifecta, I'm geared up to tackle user problems head-on as a Product Manager.",
+  openGraph: {
+    title: 'wrptr | product enthusiast',
+    description: 'Product Manager, Developer, Creator.',
+    url: 'https://wrptr.com',
+    siteName: 'wrptr | product enthusiast',
+    images: [
+      {
+        url: 'https://wrptr.com/og.png',
+        width: 1920,
+        height: 1080,
+      },
+    ],
+    locale: 'en-US',
+    type: 'website',
+  },
+  twitter: {
+    title: 'wrptr | product enthusiast',
+    card: 'summary_large_image',
+  },
 };
 
 export default function RootLayout({
