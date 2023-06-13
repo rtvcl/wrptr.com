@@ -56,9 +56,7 @@ const MoodboardSection = (props: Props) => {
 };
 
 export const FooterTrademark = () => (
-  <footer className="mb-4 text-sm text-center ">
-    {FOOTER_COPY}
-  </footer>
+  <footer className="mb-4 text-sm text-center ">{FOOTER_COPY}</footer>
 );
 
 export default MoodboardSection;
