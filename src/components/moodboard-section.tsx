@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import ImageMoodboard from "@/assets/img/moodboard.png";
 import ImgGrungeTextureDark1 from "@/assets/img/grunge-texture-dark-1.jpg";
+import { FOOTER_COPY } from "@/config/general";
 
 type Props = {};
 
@@ -34,7 +35,6 @@ const MoodboardSection = (props: Props) => {
             This is my moodboard, a collection of images, colors, and textures
             that represent the aesthetic I hope to achieve with my website.
           </p>
-
           <Image
             className="mx-auto"
             src={ImageMoodboard}
@@ -57,7 +57,7 @@ const MoodboardSection = (props: Props) => {
 
 export const FooterTrademark = () => (
   <footer className="mb-4 text-sm text-center ">
-    designed and developed with 💗 by Wira in 2023
+    {FOOTER_COPY}
   </footer>
 );
 
