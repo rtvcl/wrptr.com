@@ -30,7 +30,7 @@ const AboutPage = (props: Props) => {
           <ul>
             <li className="flex items-center space-x-4">
               <TiMail size={32} />
-              <span>agungwpg@gmail.com</span>
+              <span>contact@wrptr.com</span>
             </li>
             <li>
               <Link
