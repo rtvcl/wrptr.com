@@ -3,12 +3,12 @@ import HeroSection from "@/components/hero-section";
 import MoodboardSection from "@/components/moodboard-section";
 import SubscriptionForm from "@/components/subscription-form";
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
       <HeroSection />
       <SubscriptionForm />
-      <BlogListSection />
+      <BlogListSection isFeatured={true} />
       <MoodboardSection />
     </>
   );
