@@ -25,7 +25,7 @@ const PostDetailPage = async ({ params: { slug } }: Props) => {
         </div>
       </figure>
       <h1>{title}</h1>
-      <MDXRemote source={markdown.parent} />
+      {/* <MDXRemote source={markdown.parent} /> */}
     </article>
   );
 };

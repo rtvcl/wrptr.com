@@ -5,6 +5,13 @@ import { NOTION_DATABASE_POST_ID } from "@/config/notion";
 import { Result } from "./notion-schema";
 import Error from "next/error";
 
+export type PostProperty = {
+  id: string;
+  cover_url: string;
+  slug: string;
+  title: string;
+  short: string;
+};
 export default class NotionService {
   client: Client;
   n2m: NotionToMarkdown;
@@ -42,7 +49,7 @@ export default class NotionService {
     return results.map(this.mapPostProperty);
   }
 
-  mapPostProperty(post: Result) {
+  mapPostProperty(post: Result): PostProperty {
     return {
       id: post.id,
       cover_url: post.cover.external.url,
