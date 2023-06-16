@@ -59,7 +59,7 @@ export default class NotionService {
     };
   }
 
-  async getPostBySlug(slug: string) {
+  async getPostBySlug(slug: string): Promise<PostProperty & { markdown: any }> {
     const isPublishedFilter = {
       property: "status",
       status: { equals: "Publish" },
