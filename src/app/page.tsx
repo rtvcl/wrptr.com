@@ -2,13 +2,20 @@ import BlogListSection from "@/components/blog-list-section";
 import HeroSection from "@/components/hero-section";
 import MoodboardSection from "@/components/moodboard-section";
 import SubscriptionForm from "@/components/subscription-form";
+import { notion } from "@/lib/notion-service";
 
 export default async function Home() {
+  let blogs;
+  try {
+    blogs = await notion.getAllPost({ isFeatured: true });
+  } catch (error) {
+    console.log(error);
+  }
   return (
     <>
       <HeroSection />
       <SubscriptionForm />
-      <BlogListSection isFeatured={true} />
+      <BlogListSection blogs={blogs} />
       <MoodboardSection />
     </>
   );
