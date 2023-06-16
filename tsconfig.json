@@ -28,7 +28,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/lib/mdx.ts",
+    "src/lib/mdx.ts"
   ],
   "exclude": ["node_modules"]
 }

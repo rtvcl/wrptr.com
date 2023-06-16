@@ -33,3 +33,29 @@ body::before {
 ::-webkit-scrollbar {
   display: none;
 }
+
+h2.style1[attr-title],
+h3.style1[attr-title] {
+  --fs-38: 2.375rem;
+  align-items: center;
+  display: flex;
+  font-size: var(--fs-38);
+  position: relative;
+}
+
+h1.style1[attr-title]:before,
+h2.style1[attr-title]:before,
+h3.style1[attr-title]:before {
+  -webkit-text-fill-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  -webkit-text-stroke: 1px rgb(0 0 0 / var(--tw-bg-opacity));
+  color: rgb(255 255 255 / var(--tw-bg-opacity));
+  content: attr(attr-title);
+  display: block;
+  height: 100%;
+  left: -2px;
+  max-width: calc(100% - 4px);
+  position: absolute;
+  top: 2px;
+  width: 100%;
+  z-index: -1;
+}
