@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("spinner.css");
+
 body::before {
   position: fixed;
   top: 0;
