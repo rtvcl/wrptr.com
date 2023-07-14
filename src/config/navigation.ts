@@ -17,6 +17,10 @@ const NAVIGATION_LIST: NavItem[] = [
     href: "/roadmap",
     label: "roadmap",
   },
+  {
+    href: "/wfa",
+    label: "wfa-list",
+  },
 ];
 
 export { NAVIGATION_LIST };
