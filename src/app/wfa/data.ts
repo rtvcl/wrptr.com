@@ -1,6 +1,7 @@
 export const wfcData = [
     {
         name: 'wfa name1',
+        location: 'jakarta selatan',
         meta: {
             'instagram': 'link to instagram',
             'tiktok': 'link to tiktok',
@@ -16,6 +17,7 @@ export const wfcData = [
     },
     {
         name: 'wfa name2',
+        location: 'jakarta selatan',
         meta: {
             'instagram': 'link to instagram',
             'tiktok': 'link to tiktok',
@@ -31,6 +33,7 @@ export const wfcData = [
     },
     {
         name: 'wfa name3',
+        location: 'bali',
         meta: {
             'instagram': 'link to instagram',
             'tiktok': 'link to tiktok',
