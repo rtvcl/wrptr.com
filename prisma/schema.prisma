@@ -1,0 +1,39 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// {
+//         name: 'wfa name1',
+//         location: 'jakarta selatan',
+//         meta: {
+//             'instagram': 'link to instagram',
+//             'tiktok': 'link to tiktok',
+//             'maps': 'link to maps',
+//         },
+
+//         perks: {
+//             affordability: 4,
+//             quitetude: 5,
+//             drinks: '3', isAlcohol: true,
+//             connectivity: 3.2,
+//         }
+//     },
+
+model Place {
+  id            Int     @id @default(autoincrement())
+  name          String  @db.VarChar(255)
+  location_name String  @db.VarChar(255)
+  url_ig        String  @db.VarChar(255)
+  url_tt        String  @db.VarChar(255)
+  url_map       String  @db.VarChar(255)
+  affordability Int
+  quitetude     Int
+  drinks        Int
+  connectivity  Int
+  is_alcohol    Boolean @default(false)
+}

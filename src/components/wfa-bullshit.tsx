@@ -1,12 +1,13 @@
 'use client'
 
+import { Place } from "@prisma/client"
 import { useState } from "react"
 
-type Props = {}
+type Props = {
+}
 
 const WFAIntroduction = (props: Props) => {
-  const [showIntroduction, setShowIntroduction] = useState(true)
-
+    const [showIntroduction, setShowIntroduction] = useState(true)
     return (
         <>
             <div className='flex items-center justify-between w-full mb-4'>
