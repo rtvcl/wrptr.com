@@ -24,7 +24,7 @@ const WFAList = (props: Props) => {
           <ul className='grid grid-cols-2 gap-x-4'>
             <li>affordability: {wfa.affordability}/5</li>
             <li>quitetude: {wfa.quitetude}/5</li>
-            <li>drinks: {wfa.drinks}/5 {wfa.is_alcohol && '+ 🍺'}</li>
+            <li>drinks: {wfa.drinks}/10 {wfa.is_alcohol && '+ 🍺'}</li>
             <li>connectivity: 3.2/5</li>
           </ul>
 
