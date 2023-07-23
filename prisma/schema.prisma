@@ -25,15 +25,17 @@ datasource db {
 //     },
 
 model Place {
-  id            Int     @id @default(autoincrement())
-  name          String  @db.VarChar(255)
-  location_name String  @db.VarChar(255)
-  url_ig        String  @db.VarChar(255)
-  url_tt        String  @db.VarChar(255)
-  url_map       String  @db.VarChar(255)
+  id            Int      @id @default(autoincrement())
+  name          String   @db.VarChar(255)
+  location_name String   @db.VarChar(255)
+  url_ig        String   @db.VarChar(255)
+  url_tt        String   @db.VarChar(255)
+  url_map       String   @db.VarChar(255)
   affordability Int
   quitetude     Int
   drinks        Int
   connectivity  Int
-  is_alcohol    Boolean @default(false)
+  is_alcohol    Boolean  @default(false)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt @default(now())
 }

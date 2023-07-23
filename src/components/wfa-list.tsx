@@ -25,7 +25,7 @@ const WFAList = (props: Props) => {
             <li>affordability: {wfa.affordability}/5</li>
             <li>quitetude: {wfa.quitetude}/5</li>
             <li>drinks: {wfa.drinks}/10 {wfa.is_alcohol && '+ 🍺'}</li>
-            <li>connectivity: 3.2/5</li>
+            <li>connectivity: {wfa.connectivity}/5</li>
           </ul>
 
         </div>
