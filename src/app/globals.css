@@ -15,7 +15,7 @@ body::before {
   opacity: 0.2;
   z-index: -50;
   background: no-repeat center / cover
-    url("../assets/img/grunge-texture-light-1.jpg");
+    url("../assets/img/grunge-texture-light-1.webp");
 }
 .retro-shadow {
   box-shadow: 4px 4px 0px #000000;

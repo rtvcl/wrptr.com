@@ -5,7 +5,7 @@ export async function GET(req: NextRequest) {
 
     const search = req.nextUrl.searchParams.get('q')
     const page = parseInt(req.nextUrl.searchParams.get('page') || '1')
-    const limit = parseInt(req.nextUrl.searchParams.get('limit') || '3')
+    const limit = parseInt(req.nextUrl.searchParams.get('limit') || '2')
     const offset = parseInt(req.nextUrl.searchParams.get('offset') || '0')
 
     const skipTake = {
@@ -52,5 +52,5 @@ export async function GET(req: NextRequest) {
         })
     })
 
-    return NextResponse.json({ data: places, meta: { total: placesCount, total_page: Math.ceil(placesCount / limit) } })
+    return NextResponse.json({ data: places, meta: { total: placesCount, page, total_page: Math.ceil(placesCount / limit) } })
 }

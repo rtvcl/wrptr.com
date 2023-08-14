@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import ImageMoodboard from "@/assets/img/moodboard.png";
-import ImgGrungeTextureDark1 from "@/assets/img/grunge-texture-dark-1.jpg";
+import ImgGrungeTextureDark1 from "@/assets/img/grunge-texture-dark-1.webp";
 import { FOOTER_COPY } from "@/config/general";
 
 type Props = {};

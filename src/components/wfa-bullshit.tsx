@@ -7,7 +7,7 @@ type Props = {
 }
 
 const WFAIntroduction = (props: Props) => {
-    const [showIntroduction, setShowIntroduction] = useState(true)
+    const [showIntroduction, setShowIntroduction] = useState(false)
     return (
         <>
             <div className='flex items-center justify-between w-full mb-4'>
