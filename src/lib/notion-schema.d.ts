@@ -16,7 +16,8 @@ export interface Result {
 
 export interface Cover {
   type: string;
-  external: External;
+  file?: External;
+  external?: External;
 }
 
 export interface External {

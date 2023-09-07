@@ -45,14 +45,14 @@ export default class NotionService {
     });
 
     const results = response.results as Result[];
-
+    
     return results.map(this.mapPostProperty);
   }
 
   mapPostProperty(post: Result): PostProperty {
     return {
       id: post.id,
-      cover_url: post.cover.external.url,
+      cover_url: post.cover.external?.url || post.cover.file!.url,
       slug: post.properties.slug.formula.string,
       title: post.properties.title.title[0].plain_text,
       short: post.properties.short.rich_text[0].plain_text,
