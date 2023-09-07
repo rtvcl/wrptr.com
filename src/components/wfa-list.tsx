@@ -19,7 +19,7 @@ const WFAList = ({ places,total_page }: Props) => {
   const fetchData = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch(`http://localhost:3000/api/wfa?page=${page + 1}`);
+      const response = await fetch(`${process.env.BASE_URL}/api/wfa?page=${page + 1}`);
       const { data }: { data: Place[] } = await response.json();
       setItems(prevItems => [...prevItems, ...data]);
       setPage(prevPage => prevPage + 1);
