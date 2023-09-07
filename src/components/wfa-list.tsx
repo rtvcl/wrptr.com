@@ -9,32 +9,39 @@ type Props = {
   total_page: number
 }
 
-const WFAList = ({ places,total_page }: Props) => {
+
+const WFAList = ({ places, total_page }: Props) => {
   const [items, setItems] = useState<Place[]>(places);
   const [page, setPage] = useState(1);
 
   const [isLoading, setIsLoading] = useState(false);
   const observerTarget = useRef<null | IntersectionObserver>(null);
 
-  const fetchData = async () => {
-    setIsLoading(true);
-    try {
-      const response = await fetch(`${process.env.BASE_URL}/api/wfa?page=${page + 1}`);
-      const { data }: { data: Place[] } = await response.json();
-      setItems(prevItems => [...prevItems, ...data]);
-      setPage(prevPage => prevPage + 1);
-    } catch (error) {
-      // TODO! catch error
-    } finally {
-      setIsLoading(false);
-    }
-  };
+
+
+  const fetchData = useCallback(
+    async () => {
+      setIsLoading(true);
+      try {
+        const response = await fetch(`/api/wfa?page=${page + 1}`);
+        const { data }: { data: Place[] } = await response.json();
+        setItems(prevItems => [...prevItems, ...data]);
+        setPage(prevPage => prevPage + 1);
+      } catch (error) {
+        // TODO! catch error
+      } finally {
+        setIsLoading(false);
+      }
+    },
+    [page],
+  )
+
 
   const lastMovie = useCallback((node: any) => {
     if (!node) return
     if (isLoading) return
     if (observerTarget.current) observerTarget.current.disconnect();
-    if(page >= total_page) return
+    if (page >= total_page) return
     observerTarget.current = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
         fetchData()
@@ -47,7 +54,7 @@ const WFAList = ({ places,total_page }: Props) => {
     setItems(places)
     setPage(1)
   }, [places, total_page])
-  
+
 
 
   return (
