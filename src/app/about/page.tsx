@@ -36,8 +36,7 @@ const AboutPage = (props: Props) => {
               <Link
                 className="flex items-center space-x-4 hover:text-[#A57EE5]"
                 href="https://www.linkedin.com/in/agungwpg/"
-                target="_blank"
-              >
+                target="_blank">
                 <TiSocialLinkedin size={32} />
                 <span>Connect on LinkedIn</span>
               </Link>
@@ -46,8 +45,7 @@ const AboutPage = (props: Props) => {
               <Link
                 className="flex items-center space-x-4 hover:text-[#A57EE5]"
                 href="https://github.com/agungwpg"
-                target="_blank"
-              >
+                target="_blank">
                 <TiSocialGithub size={32} />
                 <span>Follow on Github</span>
               </Link>
@@ -60,8 +58,7 @@ const AboutPage = (props: Props) => {
           <Link
             target="_blank"
             href="/cv-wira-2022.pdf"
-            className=" font-bold border-[#000000] border-[1px] mt-4 retro-shadow-sm hover:text-white hover:bg-black transition-colors px-4 -translate-y-1  text-center"
-          >
+            className=" font-bold border-[#000000] border-[1px] mt-4 retro-shadow-sm hover:text-white hover:bg-black transition-colors px-4 -translate-y-1  text-center">
             Download CV
           </Link>
         </div>

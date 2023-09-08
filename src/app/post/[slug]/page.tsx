@@ -14,6 +14,7 @@ const PostDetailPage = async ({ params: { slug } }: Props) => {
     response = await notion.getPostBySlug(slug);
   } catch (error) {
     console.log(error);
+    throw new Error("something went wrong...");
   }
   return (
     <article className="pb-24 mx-4 prose-sm prose md:mx-auto md:prose-base lg:prose-lg prose-h1:text-3xl">
@@ -34,8 +35,7 @@ const PostDetailPage = async ({ params: { slug } }: Props) => {
           {/* !TODO: fix this part */}
           <MDXRemote source={response.markdown.parent} />
         </>
-      )
-      }
+      )}
     </article>
   );
 };

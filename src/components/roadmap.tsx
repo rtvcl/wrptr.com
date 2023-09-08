@@ -49,11 +49,9 @@ export const RoadmapCard = ({ title, Icon, content, color }: RoadmapGroup) => {
   return (
     <li
       key={title}
-      className="flex bg-white flex-col items-start space-y-4 retro-shadow border-[#000000] border-[2px] p-4"
-    >
+      className="flex bg-white flex-col items-start space-y-4 retro-shadow border-[#000000] border-[2px] p-4">
       <div
-        className={`retro-shadow p-2 border-[#000000]  border-[2px]  text-4xl text-white ${color}`}
-      >
+        className={`retro-shadow p-2 border-[#000000]  border-[2px]  text-4xl text-white ${color}`}>
         {<Icon />}
       </div>
       <h4 className="text-lg font-black">{title}</h4>

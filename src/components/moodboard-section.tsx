@@ -18,8 +18,7 @@ export const BlackGrungeSection = ({
       className={`text-white rounded-t-[28px] ${className}`}
       style={{
         background: `no-repeat center / cover url(${ImgGrungeTextureDark1.src})`,
-      }}
-    >
+      }}>
       {children}
     </div>
   );

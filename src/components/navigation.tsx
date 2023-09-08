@@ -19,8 +19,7 @@ function Navigation() {
       className={clsx(
         "sticky top-0 z-50 pb-4 pl-4 md:flex md:ml-0 md:justify-center md:items-center sm:gap-8 transition-colors bg-transparent",
         scrollY > 0 && "bg-zinc-100 shadow-md"
-      )}
-    >
+      )}>
       <Link href="/">
         <span className="text-3xl font-black leading-loose">{BRAND_NAME}</span>
       </Link>
@@ -43,8 +42,7 @@ const NavItem = ({ href, label, segment }: NavItem & { segment: string }) => (
         "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-1 ",
         segment == href.split("/")[1] &&
           `py-2 after:content-[''] after:bg-[#A57EE5] `
-      )}
-    >
+      )}>
       {label}
     </li>
   </Link>

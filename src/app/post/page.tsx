@@ -10,6 +10,7 @@ const PostPage = async (props: Props) => {
     blogs = await notion.getAllPost({ isFeatured: false });
   } catch (error) {
     console.log(error);
+    throw new Error("something went wrong...");
   }
 
   return <BlogListSection blogs={blogs} />;

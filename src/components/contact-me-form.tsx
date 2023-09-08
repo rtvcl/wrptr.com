@@ -48,8 +48,7 @@ const ContactMeForm = (props: Props) => {
         <div className="mb-4">
           <label
             htmlFor="name"
-            className="block mb-2 text-sm text-gray-600 dark:text-gray-400"
-          >
+            className="block mb-2 text-sm text-gray-600 dark:text-gray-400">
             Full name
           </label>
           <input
@@ -63,8 +62,7 @@ const ContactMeForm = (props: Props) => {
         <div className="mb-4">
           <label
             htmlFor="email"
-            className="block mb-2 text-sm text-gray-600 dark:text-gray-400"
-          >
+            className="block mb-2 text-sm text-gray-600 dark:text-gray-400">
             Email
           </label>
           <input
@@ -78,8 +76,7 @@ const ContactMeForm = (props: Props) => {
         <div className="mb-4">
           <label
             htmlFor="message"
-            className="block mb-2 text-sm text-gray-600 dark:text-gray-400"
-          >
+            className="block mb-2 text-sm text-gray-600 dark:text-gray-400">
             Your Message
           </label>
           <textarea
@@ -93,8 +90,7 @@ const ContactMeForm = (props: Props) => {
         <div>
           <button
             disabled={loading}
-            className=" disabled:bg-gray-400 px-6 whitespace-nowrap py-2 text-lg w-full font-extrabold bg-[#2CE0AC] retro-shadow hover:bg-[#A57EE5] transition-colors rotate-1 mt-4"
-          >
+            className=" disabled:bg-gray-400 px-6 whitespace-nowrap py-2 text-lg w-full font-extrabold bg-[#2CE0AC] retro-shadow hover:bg-[#A57EE5] transition-colors rotate-1 mt-4">
             <div className="-rotate-1">
               {!loading ? "Send Message" : "Sending..."}
             </div>

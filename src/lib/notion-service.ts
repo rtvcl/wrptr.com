@@ -45,7 +45,7 @@ export default class NotionService {
     });
 
     const results = response.results as Result[];
-    
+
     return results.map(this.mapPostProperty);
   }
 

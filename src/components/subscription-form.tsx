@@ -35,8 +35,7 @@ const SubscriptionForm = (props: Props) => {
       <p className="text-sm">Sign up for my newsletter to stay in the loop.</p>
       <form
         onSubmit={subscribe}
-        className="flex items-center w-full gap-2 mt-4"
-      >
+        className="flex items-center w-full gap-2 mt-4">
         <input
           className="border-2 flex-1 border-box bg-[#f1f1f1] border-[#000000] px-4 py-2 text-sm"
           type="text"
@@ -46,8 +45,7 @@ const SubscriptionForm = (props: Props) => {
         />
         <button
           onClick={subscribe}
-          className=" px-4 text-base font-bold border-[#000000] border-[1px] retro-shadow-sm hover:text-white hover:bg-black transition-colors flex gap-2 items-center "
-        >
+          className=" px-4 text-base font-bold border-[#000000] border-[1px] retro-shadow-sm hover:text-white hover:bg-black transition-colors flex gap-2 items-center ">
           {state === "Loading" ? (
             <>
               <ImSpinner8 className=" animate-spin" /> Loading...

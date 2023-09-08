@@ -41,8 +41,7 @@ const HeroSection = (props: Props) => {
           </p>
           <Link
             href="/about"
-            className="absolute -right-4 -bottom-4 px-6 whitespace-nowrap py-2 text-lg  font-extrabold bg-[#2CE0AC] retro-shadow hover:bg-[#A57EE5] transition-colors -rotate-3"
-          >
+            className="absolute -right-4 -bottom-4 px-6 whitespace-nowrap py-2 text-lg  font-extrabold bg-[#2CE0AC] retro-shadow hover:bg-[#A57EE5] transition-colors -rotate-3">
             get in touch!
           </Link>
         </div>
@@ -50,8 +49,7 @@ const HeroSection = (props: Props) => {
           <li className="hover:text-[#2CE0AC] flex place-items-center">
             <Link
               target="_blank"
-              href="https://www.tiktok.com/@wrptr.com?is_from_webapp=1&sender_device=pc"
-            >
+              href="https://www.tiktok.com/@wrptr.com?is_from_webapp=1&sender_device=pc">
               <SiTiktok size={24} />
             </Link>
           </li>

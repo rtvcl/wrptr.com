@@ -22,8 +22,7 @@ export default function Error({
       </h2>
       <Link
         href="/post"
-        className=" px-6 whitespace-nowrap py-2 text-lg w-fit  font-extrabold bg-[#2CE0AC] retro-shadow hover:bg-[#A57EE5] transition-colors -rotate-3 mt-4"
-      >
+        className=" px-6 whitespace-nowrap py-2 text-lg w-fit  font-extrabold bg-[#2CE0AC] retro-shadow hover:bg-[#A57EE5] transition-colors -rotate-3 mt-4">
         See Blog Post
       </Link>
     </div>
