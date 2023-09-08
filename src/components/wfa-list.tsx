@@ -28,7 +28,8 @@ const WFAList = ({ places, total_page }: Props) => {
         setItems(prevItems => [...prevItems, ...data]);
         setPage(prevPage => prevPage + 1);
       } catch (error) {
-        // TODO! catch error
+        console.log(error)
+        throw new Error('could not fetch data...')
       } finally {
         setIsLoading(false);
       }
