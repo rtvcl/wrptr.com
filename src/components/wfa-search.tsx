@@ -31,7 +31,11 @@ const WfaSearch = ({ initialSearch }: Props) => {
         value={search}
         onChange={(e) => setSearch(e.currentTarget.value)}
       />
-      <button type="submit" className="px-4 text-base font-bold border-[#000000] border-[1px] retro-shadow-sm hover:text-white hover:bg-black transition-colors flex gap-2 items-center ">Search</button>
+      <button
+        type="submit"
+        className="px-4 text-base font-bold border-[#000000] border-[1px] retro-shadow-sm hover:text-white hover:bg-black transition-colors flex gap-2 items-center ">
+        Search
+      </button>
     </form>
   );
 };

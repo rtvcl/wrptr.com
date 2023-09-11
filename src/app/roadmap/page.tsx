@@ -7,7 +7,7 @@ type Props = {};
 
 const RoadmapPage = (props: Props) => {
   return (
-    <section className="max-w-screen-lg mx-4 mb-12 lg:mx-auto">
+    <section className="max-w-screen-lg mx-4 lg:mx-auto">
       <h1 className="mb-4 text-4xl font-black ">/roadmap</h1>
       <div className="space-y-4">
         <p className="max-w-xl">

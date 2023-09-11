@@ -8,7 +8,7 @@ export const dataWebsiteRoadmap: RoadmapGroup[] = [
     color: "bg-pink-600",
     content: [
       { roadmapTitle: "Analytics Tracking", isDone: true },
-      { roadmapTitle: "Desktop Version UI/UX", isDone: false },
+      { roadmapTitle: "Desktop Version UI/UX", isDone: true },
       { roadmapTitle: "SEO Support", isDone: false },
       { roadmapTitle: "i11n: English, Indonesia", isDone: false },
     ],
@@ -29,8 +29,8 @@ export const dataWebsiteRoadmap: RoadmapGroup[] = [
     Icon: TiNews,
     color: "bg-lime-500",
     content: [
+      { roadmapTitle: "Notion Integrations", isDone: true },
       { roadmapTitle: "Search Function", isDone: false },
-      { roadmapTitle: "Notion Integrations", isDone: false },
       { roadmapTitle: "Meta Data, Tags/Categories", isDone: false },
       { roadmapTitle: "Code Highlight & Comment Section", isDone: false },
     ],
@@ -51,8 +51,8 @@ export const dataWebsiteRoadmap: RoadmapGroup[] = [
     Icon: TiMediaStop,
     color: "bg-violet-500",
     content: [
+      { roadmapTitle: "WFA List", isDone: true  },
       { roadmapTitle: "Movie Review", isDone: false },
-      { roadmapTitle: "Spotify Integrations", isDone: false },
       { roadmapTitle: "Book Review", isDone: false },
       { roadmapTitle: "Product Review", isDone: false },
     ],

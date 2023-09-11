@@ -18,7 +18,7 @@ type Props = {};
 const HeroSection = (props: Props) => {
   return (
     <div className="overflow-x-clip">
-      <div className="relative mx-4 my-8 sm:max-w-lg sm:mx-auto h-60 ">
+      <div className="relative mx-4 my-8 sm:max-w-lg sm:mx-auto h-60">
         <Image
           className="scale-[1.8] rotate-3 scale-x-[2.4] mix-blend-multiply"
           src={ImgPinkSplash}
@@ -45,38 +45,42 @@ const HeroSection = (props: Props) => {
             get in touch!
           </Link>
         </div>
-        <ul className="absolute left-0 flex justify-center cursor-pointer top-[15.5rem]">
-          <li className="hover:text-[#2CE0AC] flex place-items-center">
-            <Link
-              target="_blank"
-              href="https://www.tiktok.com/@wrptr.com?is_from_webapp=1&sender_device=pc">
-              <SiTiktok size={24} />
-            </Link>
-          </li>
-          <li className="hover:text-[#2CE0AC] flex place-items-center">
-            <Link target="_blank" href="https://twitter.com/agungwpg">
-              <TiSocialTwitter size={32} />
-            </Link>
-          </li>
-          <li className="hover:text-[#2CE0AC] flex place-items-center">
-            <Link target="_blank" href="https://www.linkedin.com/in/agungwpg/">
-              <TiSocialLinkedin size={32} />
-            </Link>
-          </li>
-          <li className="hover:text-[#2CE0AC] flex place-items-center">
-            <Link target="_blank" href="https://github.com/agungwpg">
-              <TiSocialGithub size={32} />
-            </Link>
-          </li>
-          <li className="hover:text-[#2CE0AC] flex place-items-center">
-            <Link target="_blank" href="https://www.instagram.com/agungwpg/">
-              <TiSocialInstagram size={28} />
-            </Link>
-          </li>
-        </ul>
+        <SocialMedia />
       </div>
     </div>
   );
 };
+
+export const SocialMedia = () => {
+  return <ul className="absolute left-0 flex justify-center cursor-pointer top-[15.5rem]">
+    <li className="hover:text-[#2CE0AC] flex place-items-center">
+      <Link
+        target="_blank"
+        href="https://www.tiktok.com/@wrptr.com?is_from_webapp=1&sender_device=pc">
+        <SiTiktok size={24} />
+      </Link>
+    </li>
+    <li className="hover:text-[#2CE0AC] flex place-items-center">
+      <Link target="_blank" href="https://twitter.com/agungwpg">
+        <TiSocialTwitter size={32} />
+      </Link>
+    </li>
+    <li className="hover:text-[#2CE0AC] flex place-items-center">
+      <Link target="_blank" href="https://www.linkedin.com/in/agungwpg/">
+        <TiSocialLinkedin size={32} />
+      </Link>
+    </li>
+    <li className="hover:text-[#2CE0AC] flex place-items-center">
+      <Link target="_blank" href="https://github.com/agungwpg">
+        <TiSocialGithub size={32} />
+      </Link>
+    </li>
+    <li className="hover:text-[#2CE0AC] flex place-items-center">
+      <Link target="_blank" href="https://www.instagram.com/agungwpg/">
+        <TiSocialInstagram size={28} />
+      </Link>
+    </li>
+  </ul>
+}
 
 export default HeroSection;

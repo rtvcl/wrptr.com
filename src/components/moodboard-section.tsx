@@ -15,7 +15,7 @@ export const BlackGrungeSection = ({
 }) => {
   return (
     <div
-      className={`text-white rounded-t-[28px] ${className}`}
+      className={`text-white rounded-[28px] ${className}`}
       style={{
         background: `no-repeat center / cover url(${ImgGrungeTextureDark1.src})`,
       }}>
@@ -49,13 +49,12 @@ const MoodboardSection = (props: Props) => {
         </div>
       </section>
       <p className="mt-4 text-center">* * *</p>
-      <FooterTrademark />
     </BlackGrungeSection>
   );
 };
 
 export const FooterTrademark = () => (
-  <footer className="mb-4 text-sm text-center ">{FOOTER_COPY}</footer>
+  <footer className="my-4 text-sm text-center ">{FOOTER_COPY}</footer>
 );
 
 export default MoodboardSection;
