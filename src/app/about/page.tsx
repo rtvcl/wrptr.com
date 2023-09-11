@@ -91,7 +91,6 @@ const AboutPage = (props: Props) => {
         your vision into a reality.
       </p>
       <ContactMeForm />
-      <FooterTrademark />
     </>
   );
 };

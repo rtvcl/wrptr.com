@@ -2,7 +2,7 @@ import prisma from "@/lib/prisma";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(req: NextRequest) {
-  const search = req.nextUrl.searchParams.get("q") || '';
+  const search = req.nextUrl.searchParams.get("q") || "";
   const page = parseInt(req.nextUrl.searchParams.get("page") || "1");
   const limit = parseInt(req.nextUrl.searchParams.get("limit") || "5");
 
@@ -26,7 +26,7 @@ export async function GET(req: NextRequest) {
         { name: { contains: search } },
         { location_name: { contains: search } },
       ],
-    }
+    },
   });
 
   const totalPages = Math.ceil(totalCount / limit);

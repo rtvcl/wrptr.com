@@ -3,6 +3,7 @@ import "./globals.css";
 import { Nunito_Sans } from "next/font/google";
 import React from "react";
 import { Analytics } from "@vercel/analytics/react";
+import { FooterTrademark } from "@/components/moodboard-section";
 
 const nunitoSans = Nunito_Sans({ subsets: ["latin"] });
 
@@ -38,9 +39,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${nunitoSans.className} bg-[#fafafa] `}>
+      <body
+        className={`${nunitoSans.className} bg-[#fafafa] min-h-screen flex flex-col`}>
         <Navigation />
-        {children}
+        <main className="flex-1">{children}</main>
+        <FooterTrademark />
         <Analytics />
       </body>
     </html>

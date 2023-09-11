@@ -17,14 +17,14 @@ function Navigation() {
   return (
     <div
       className={clsx(
-        "sticky top-0 z-50 pb-4 pl-4 md:flex md:ml-0 md:justify-center md:items-center sm:gap-8 transition-colors bg-transparent",
+        "sticky top-0 z-50 pb-4 md:flex md:ml-0 md:justify-center md:items-center sm:gap-8 transition-colors bg-transparent",
         scrollY > 0 && "bg-zinc-100 shadow-md"
       )}>
       <Link href="/">
-        <span className="text-3xl font-black leading-loose">{BRAND_NAME}</span>
+        <span className="pl-4 text-3xl font-black leading-loose">{BRAND_NAME}</span>
       </Link>
       <nav>
-        <ul className="flex items-start gap-2 overflow-x-auto text-base font-semibold text-white md:mt-4 flex-nowrap whitespace-nowrap">
+        <ul className="flex items-start gap-2 px-4 overflow-x-auto text-base font-semibold text-white xs:pl-0 md:mt-4 flex-nowrap whitespace-nowrap">
           {NAVIGATION_LIST.map(({ href, label }) => (
             <NavItem key={label} href={href} label={label} segment={segment} />
           ))}

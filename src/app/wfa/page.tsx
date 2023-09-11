@@ -11,8 +11,7 @@ type Props = {
 
 const WFCList = async ({ searchParams: { search } }: Props) => {
   const response = await fetch(
-    `${process.env.BASE_URL}/api/wfa${
-      search ? `?q=${encodeURIComponent(search)}` : ""
+    `${process.env.BASE_URL}/api/wfa${search ? `?q=${encodeURIComponent(search)}` : ""
     }`,
     { method: "GET" }
   );
@@ -28,10 +27,8 @@ const WFCList = async ({ searchParams: { search } }: Props) => {
     <section className="max-w-screen-lg mx-4 mb-12 lg:mx-auto">
       <WFAIntroduction />
       <div>
-        <div>
-          <WfaSearch initialSearch={search} />
-          <WFAList places={data} total_page={meta.total_page} />
-        </div>
+        <WfaSearch initialSearch={search} />
+        <WFAList places={data} total_page={meta.total_page} />
       </div>
     </section>
   );
