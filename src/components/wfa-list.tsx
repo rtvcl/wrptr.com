@@ -31,7 +31,7 @@ const WFAList = ({ places, total_page }: Props) => {
     }
   }, [page]);
 
-  const lastMovie = useCallback(
+  const lastList = useCallback(
     (node: any) => {
       if (!node) return;
       if (isLoading) return;
@@ -56,7 +56,7 @@ const WFAList = ({ places, total_page }: Props) => {
     <>
       <ul className="grid grid-cols-1 gap-4 mt-4 md:grid-cols-2">
         {items.map((wfa, index) => (
-          <WFAListItem key={wfa.name} place={wfa} ref={lastMovie} />
+          <WFAListItem key={wfa.name} place={wfa} ref={lastList} />
         ))}
       </ul>
       {isLoading && (
