@@ -84,8 +84,12 @@ const AboutPage = (props: Props) => {
       <p className="mt-4 text-center">* * *</p>
 
       <section className="max-w-2xl mx-4 mb-8 sm:mx-auto">
+        <h3 className="mb-4 text-2xl font-bold text-center">Work Experiences</h3>
         <VerticalExperienceSection />
       </section>
+
+      <p className="mt-4 text-center">* * *</p>
+
 
       <p className="max-w-2xl mx-4 mb-8 text-center sm:mx-auto text-md">
         In addition to my role as a product manager, I thrive on exploring

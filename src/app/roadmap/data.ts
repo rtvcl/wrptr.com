@@ -19,8 +19,8 @@ export const dataWebsiteRoadmap: RoadmapGroup[] = [
     color: "bg-sky-500",
     content: [
       { roadmapTitle: "Roadmap Page", isDone: true },
+      { roadmapTitle: "WFA List", isDone: true },
       { roadmapTitle: "Uses tech Page", isDone: false },
-      { roadmapTitle: "Products (Built in Public)", isDone: false },
       { roadmapTitle: "Portfolio", isDone: false },
     ],
   },
@@ -41,20 +41,20 @@ export const dataWebsiteRoadmap: RoadmapGroup[] = [
     color: "bg-[#2CE0AC]",
     content: [
       { roadmapTitle: "Contact Me Form", isDone: true },
+      { roadmapTitle: "Work Experiences", isDone: true },
       { roadmapTitle: "Tools / Framework / Area", isDone: false },
       { roadmapTitle: "Values / Leadership styles", isDone: false },
-      { roadmapTitle: "Work Experiences", isDone: false },
     ],
   },
   {
-    title: "Others",
+    title: "WFA List",
     Icon: TiMediaStop,
     color: "bg-violet-500",
     content: [
-      { roadmapTitle: "WFA List", isDone: true  },
-      { roadmapTitle: "Movie Review", isDone: false },
-      { roadmapTitle: "Book Review", isDone: false },
-      { roadmapTitle: "Product Review", isDone: false },
+      { roadmapTitle: "List", isDone: true  },
+      { roadmapTitle: "Search", isDone: true },
+      { roadmapTitle: "Google Maps, Instagram, Tiktok", isDone: true },
+      { roadmapTitle: "Detail Page", isDone: false },
     ],
   },
 ];
