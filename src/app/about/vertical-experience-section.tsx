@@ -40,7 +40,7 @@ const VerticalExperienceSection = (props: Props) => {
         <ol>
             {workExperiences.map((workExperience, index) => (
                 <ListItem key={workExperience.company} title={workExperience.company} subtitle={workExperience.title} year={workExperience.duration} detail={() => (
-                    <div className='mt-2'>
+                    <div className=''>
                         <p className='mb-2'>{workExperience.description}</p>
                         {workExperience.highlight &&
                             <>
@@ -60,14 +60,17 @@ const VerticalExperienceSection = (props: Props) => {
 }
 
 const ListItem = ({ title, subtitle, detail, year }: { title: string; subtitle: string; detail: () => React.ReactNode; year: string }) => {
-    return (<li className='relative pb-4 pl-4 border-l-2 sm:pl-8 border-l-black'>
+    return (
+    <li className='relative pb-4 pl-4 border-l-2 sm:pl-8 border-l-black'>
         <span className='absolute w-4 h-4 bg-white -left-2 ring-1 -top-1 ring-black' />
-        <div className='flex'>
-            <h4 className="inline-block text-lg font-black">{title}</h4>
-            <h5 className="inline-block px-2 py-1 ml-2 text-xs rounded-full bg-slate-200">
-                {subtitle}
-            </h5>
-            <span className='ml-auto'>{year}</span>
+        <div className='flex -translate-y-2'>
+            <div className='flex-col flex-1'>
+                <h4 className="inline-block text-xl font-bold">{title}</h4>
+                <h5 className="inline-block px-2 py-1 ml-2 text-xs rounded-full bg-slate-200">
+                    {subtitle}
+                </h5>
+            </div>
+            <span className='italic font-bold text-gray-400'>{year}</span>
         </div>
         {detail()}
     </li>)
