@@ -9,7 +9,7 @@ export default async function Home() {
   try {
     blogs = await notion.getAllPost({ isFeatured: true });
   } catch (error) {
-    console.log(error);
+    console.log({notionError: error});
     throw new Error("something went wrong...");
   }
   return (

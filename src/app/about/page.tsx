@@ -11,6 +11,7 @@ import {
 import ImgAbout1 from "@/assets/img/about-img-1.png";
 import ContactMeForm from "@/components/contact-me-form";
 import { FooterTrademark } from "@/components/moodboard-section";
+import VerticalExperienceSection from "./vertical-experience-section";
 
 type Props = {};
 
@@ -81,6 +82,10 @@ const AboutPage = (props: Props) => {
         </p>
       </div>
       <p className="mt-4 text-center">* * *</p>
+
+      <section className="max-w-2xl mx-4 mb-8 sm:mx-auto">
+        <VerticalExperienceSection />
+      </section>
 
       <p className="max-w-2xl mx-4 mb-8 text-center sm:mx-auto text-md">
         In addition to my role as a product manager, I thrive on exploring
