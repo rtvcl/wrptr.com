@@ -23,7 +23,7 @@ const fetchPlacesByWfaSearch = async (options: { search?: string; page?: number 
   try {
     const response = await fetch(
       `${process.env.BASE_URL}/api/wfa${buildQueryString(options.search)}`,
-      { method: "GET" }
+      { method: "GET", cache: "no-cache" }
     );
     const data: WfaPlacesResponse = await response.json();
     return data;
