@@ -5,9 +5,20 @@ type Props = {}
 
 const workExperiences = [
     {
+        company: 'Kredivo',
+        title: 'Product Manager (User)',
+        duration: '2024 - Present',
+        description: 'As a Product Manager in the User Squad, I primarily focus on enhancing user experiences by facilitating upgrades to user types and increasing credit limits. My role involves strategic planning and implementation of features that improve user satisfaction and financial accessibility.',
+        highlight: [
+            'Managed both manual and automated processes for user upgrades and credit limit increases.',
+            'Collaborated closely with the risk team to identify and implement optimal scenarios for user upgrades, balancing growth with risk management.',
+            'Integrated third-party services and improved internal processes, helping to reduce costs.',,
+        ]
+    },
+    {
         company: 'SIRCLO',
         title: 'Product Manager',
-        duration: '2022 - Present',
+        duration: '2022 - 2024',
         description: 'I have been leading multiple product teams, ranging from promotions and performance marketing to enhancing the buyer experience and managing the full SIRCLO Store Platform.',
         highlight: [
             'Successfully managed 3rd party integrations, including Meta API, Payment Gateway API, and Logistics API.',
